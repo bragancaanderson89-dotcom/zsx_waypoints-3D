@@ -1,10 +1,4 @@
-# GPS 3D — My City
-
-Implementação independente baseada nas funções e na referência visual do vídeo
-https://www.youtube.com/watch?v=NTvqJ8sTOGo (Iconic-Waypoints).
-Não contém o código do produto original. A aparência em jogo precisa de comparação
-no FiveM; não é uma certificação de equivalência exata.
-
+# GPS 3D
 ## Uso
 
 `ensure zsx_waypoints` no server.cfg. Marque um destino no mapa e entre em um
