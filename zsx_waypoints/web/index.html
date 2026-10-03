@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GPS 3D</title><style>html,body{background:transparent!important;color-scheme:normal} [hidden]{display:none!important}</style><link rel="stylesheet" href="style.css"></head>
+<body>
+  <div id="destination" hidden aria-hidden="true">
+    <div class="distance"><span id="distance">192</span><small id="unit">M</small></div>
+    <div class="destination-rule"></div><div class="destination-label" id="destination-label">DESTINO</div>
+    <div class="tip"></div><div class="stem"></div>
+  </div>
+  <main id="panel" hidden aria-labelledby="title">
+    <header><div><h1 id="title">Configurações do GPS</h1><p>Personalize sua navegação</p></div><button id="close" aria-label="Fechar">×</button></header>
+    <label class="toggle-row">Mostrar GPS na estrada<input type="checkbox" id="road" role="switch"><span class="switch"></span></label>
+    <label class="toggle-row">Mostrar destino 3D<input type="checkbox" id="destination-enabled" role="switch"><span class="switch"></span></label>
+    <div class="color-picker">
+      <div id="saturation" role="slider" tabindex="0" aria-label="Saturação e brilho da cor" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><span id="color-cursor"></span></div>
+      <input type="range" id="hue" aria-label="Matiz" min="0" max="359" step="1">
+      <div class="color-caption"><span>Cor da rota</span><label><span class="swatch"></span><input id="hex" aria-label="Cor hexadecimal" maxlength="7" spellcheck="false" value="#278bff"></label></div>
+    </div>
+    <label class="range-row" for="spacing"><span>Espaçamento das setas</span><output id="spacing-value"></output></label><input type="range" id="spacing" min="4" max="20" step="0.5">
+    <label class="range-row" for="opacity"><span>Opacidade</span><output id="opacity-value"></output></label><input type="range" id="opacity" min="0.1" max="1" step="0.01">
+    <label class="range-row" for="lift"><span>Altura das setas</span><output id="lift-value"></output></label><input type="range" id="lift" min="0.05" max="1.5" step="0.01">
+    <label class="range-row" for="scale"><span>Tamanho das setas</span><output id="scale-value"></output></label><input type="range" id="scale" min="0.5" max="2" step="0.05">
+    <footer><button id="reset">Restaurar padrão</button><span><kbd>ESC</kbd> Fechar</span></footer>
+    <div id="status" role="status" aria-live="polite"></div>
+  </main>
+  <script src="app.js"></script>
+</body></html>
