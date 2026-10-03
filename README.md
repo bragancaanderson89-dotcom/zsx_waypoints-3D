@@ -1,4 +1,16 @@
 # zsx_waypoints-3D
+---
+
+## 📸 Preview
+
+<div align="center">
+
+<img src="preview/Preview1.png" width="48%">
+<img src="preview/Preview2.png" width="48%">
+
+</div>
+
+---
 ## Uso
 
 `ensure zsx_waypoints` no server.cfg. Marque um destino no mapa e entre em um
